@@ -76,7 +76,7 @@ class Employee {
                 for (EmployeeDetails emp:Emp ) {
                     if (emp.empId == n) {
                         emp.updateEmployee();
-                        break;
+                        return true;
                     }
                 }
                 System.out.println("Employee not found with id "+n);
@@ -90,7 +90,7 @@ class Employee {
                 for (EmployeeDetails emp:Emp ) {
                     if (emp.empId == n) {
                         emp.showEmployeeDetails();
-                        break;
+                        return true;
                     }
                 }
                 System.out.println("Employee not found with id "+n);
